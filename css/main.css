@@ -1,11 +1,11 @@
 a {
-  color: rgb(199, 160, 54);
-}
-
-body {
-  padding-top: 20px;   
+  color: #fff;
 }
 
 .navbar-default {
-  background-color: rgba(0, 0, 0, 0.65);   
+  background-color: #241e1e;   
+}
+
+body {
+  padding-top: 75px;   
 }
