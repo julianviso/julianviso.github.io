@@ -1,9 +1,11 @@
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container">
-    ...
-  </div>
-</nav>
-
 a {
-  color: #00af07;
+  color: rgb(199, 160, 54);
+}
+
+body {
+  padding-top: 20px;   
+}
+
+.navbar-default {
+  background-color: rgba(0, 0, 0, 0.65);   
 }

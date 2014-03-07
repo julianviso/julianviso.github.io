@@ -4,24 +4,29 @@
     <title>Julian Viso</title>
     <meta name="MobileOptimized">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     
-    
-    
-<div class="navbar">
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <a class="brand" href="/index.html">Julian Viso</a>
-    <ul class="nav navbar navbar-inverse navbar-fixed-top .navbar-right">
-      <li><a href="/about/">About</a></li>
-      <li><a href="#">Projects</a></li>
-      <li><a href="#">Blog</a></li>
-    </ul>
-  </nav>
-</div>  
+    <script type="text/javascript">
+    if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+      var msViewportStyle = document.createElement('style')
+      msViewportStyle.appendChild(document.createTextNode(
+      '@-ms-viewport{width:auto!important}'))
+      document.querySelector('head').appendChild(msViewportStyle)
+    }
+  </script>
 </head>
     
 <body>
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+            <a class="brand" href="/index.html">Julian Viso</a>
+        </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="active"><a href="/about/">About</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Blog</a></li>
+    </ul>
+    </div>  
      
     <div id="top-floating-bar">
     <div class="fixed-bar-buttons">
