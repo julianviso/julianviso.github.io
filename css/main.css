@@ -1,10 +1,19 @@
 a {
-  color: #fff;
+  color: #00f04a;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default {
+  background-color: black;
+  font-size: 125%;
 }
 
 .navbar-default {
-  background-color: #241e1e;   
+    min-height: 70px;
+    border: none;
+    border-radius: 0;  
 }
+
 
 body {
   padding-top: 75px;   
