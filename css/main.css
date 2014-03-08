@@ -59,7 +59,7 @@ h2 {
 }
 
 h2:after {
-    content: "On"
+    content: "Viso"
 }
 
 
@@ -132,7 +132,7 @@ input#lightswitch:checked + .main h2 {
 }
  
 input#lightswitch:checked + .main h2:after {
-  content: " Off"
+  content: " Viso"
 }
  
 input#lightswitch:checked + .main p {
