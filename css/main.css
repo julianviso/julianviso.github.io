@@ -65,6 +65,7 @@ h2:after {
 
 /*feature paragraphs*/
 .features {
+	background-color: inherit;
     width: 940px;
     margin: 0 auto 30px auto;
 }
@@ -103,7 +104,7 @@ label {
   text-align: center;
   font: 14px/25px Helvetica, Arial, sans-serif;
   margin: 20px 0;
-  position: fixed;
+  position: static;
 }
  
 label:hover {
@@ -124,7 +125,7 @@ input#lightswitch:checked + .main {
 
 /*Switched Off*/
 input#lightswitch:checked + .main {
-  background: #222;
+  background-color: #222;
 }
  
 input#lightswitch:checked + .main h2 {
@@ -137,6 +138,12 @@ input#lightswitch:checked + .main h2:after {
  
 input#lightswitch:checked + .main p {
   color: #aaa;
+	background-color: #aaa;
+}
+
+input#lightswitch:checked + .main .features p{
+  color: #aaa;
+  background-color: #aaa;
 }
  
 input#lightswitch:checked + .main > .headerimage {
