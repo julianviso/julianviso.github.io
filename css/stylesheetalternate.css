@@ -17,7 +17,16 @@
 body{
     padding-top: 50px;
     font-size: 10pt;
-	background: "#313030";
+}
+
+/*
+* Lights Off Test
+*/
+
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 * {
@@ -30,10 +39,114 @@ body{
   transition: all 1s ease;
 }
 
+html, body {
+    height: 100%;
+}
+
+/*Wrapper*/
+.main {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+/*Headline */
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font: 70px Helvetica, Arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+h2:after {
+    content: "Viso"
+}
 
 
-div {
-	height: 100px;
-	width: 100px;
-	background: #000;
+/*feature paragraphs*/
+.features {
+	/*background-color: inherit;*/
+    width: 940px;
+    margin: 0 auto 30px auto;
+}
+
+.features p {
+  width: 33.33%;
+  float: left;
+  padding: 0 20px;
+  font: 13px/1.5 Helvetica, Arial, sans-serif;
+}
+ 
+.last {
+  padding-right: 0;
+}
+ 
+.features:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*Big Photo*/
+.headerimage {
+  height: 400px;
+  width: 900px;
+  margin: 0 auto;
+  background: url(http://lorempixum.com/900/400/city/3); /*change this later*/
+}
+
+/*Light Switch*/
+label {
+  display: block;
+  height: 25px;
+  width: 100px;
+  /*background: #eee;*/
+  text-align: center;
+  font: 14px/25px Helvetica, Arial, sans-serif;
+  margin: 20px 0;
+  position: static;
+}
+ 
+label:hover {
+  /*background: #ddca7e;
+  color: #fff;*/
+  cursor: pointer;
+}
+ 
+input#lightswitch {
+   position: absolute;
+   top: -9999px;
+   left: -9999px;
+}
+
+input#lightswitch:checked + .main {
+  /*background: #222;*/
+}
+
+/*Switched Off*/
+input#lightswitch:checked + .main {
+  /*background-color: #222;*/
+}
+ 
+input#lightswitch:checked + .main h2 {
+  /*color: #ddca7e;*/
+}
+ 
+input#lightswitch:checked + .main h2:after {
+  content: " Viso"
+}
+ 
+input#lightswitch:checked + .main p {
+  /*color: #aaa;
+	background-color: #aaa;*/
+}
+
+input#lightswitch:checked + .main .features p{
+  /*color: #aaa;
+  background-color: #aaa;*/
+}
+ 
+input#lightswitch:checked + .main > .headerimage {
+  /*background: url(http://lorempixum.com/900/400/city/4);
+  border: 8px solid #fff;*/
 }
