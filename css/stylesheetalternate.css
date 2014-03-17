@@ -17,7 +17,7 @@
 body{
     padding-top: 50px;
     font-size: 10pt;
-	background-color: "#313030";
+	background: "#313030";
 }
 
 * {
@@ -28,4 +28,12 @@ body{
   -o-transition: all 1s ease;
   -ms-transition: all 1s ease;
   transition: all 1s ease;
+}
+
+
+
+div {
+	height: 100px;
+	width: 100px;
+	background: #000;
 }
