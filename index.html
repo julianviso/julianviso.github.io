@@ -9,6 +9,7 @@
     <title>Julian Viso</title>
     <link href="css/syntax.css" rel="stylesheet">
     <link href="bootstrap-3.1.1-dist/css/bootstrap.min.css" rel="stylesheet">
+	
     <link href="css/main.css" rel="stylesheet">
     
     <script type="text/javascript">
@@ -42,6 +43,11 @@
             </div>  
      </div>
     </div>
+	
+	
+	<link id="swapper" rel="stylesheet" type="text/css" href="main.css" />
+	<button onClick="swapper('default.css')">Default</button>
+	<button onClick="swapper('stylesheetalternate.css')">Stylesheet Alternate</button>
 	
 	<script type="text/javascript">
 		var i=1;
@@ -94,6 +100,12 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
+	
+	<script type="text/javascript">
+		function swapper(select_sheet){
+    		document.getElementById('swapper').setAttribute('href', select_sheet);
+}
+	</script>
 </body>
     
     

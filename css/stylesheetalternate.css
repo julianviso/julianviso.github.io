@@ -1,0 +1,20 @@
+/*
+* Navigation Bar
+*/
+
+.navbar-default .navbar-brand,
+.navbar-default {
+  background-color: clear;
+  font-size: 150%;
+}
+
+.navbar-default {
+    min-height: 50px;
+    border: none;
+    border-radius: 0; 
+}
+
+body{
+    padding-top: 50px;
+    font-size: 10pt;
+}
