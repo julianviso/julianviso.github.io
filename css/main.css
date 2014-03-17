@@ -65,7 +65,7 @@ h2:after {
 
 /*feature paragraphs*/
 .features {
-	background-color: inherit;
+	/*background-color: inherit;*/
     width: 940px;
     margin: 0 auto 30px auto;
 }
@@ -100,7 +100,7 @@ label {
   display: block;
   height: 25px;
   width: 100px;
-  background: #eee;
+  /*background: #eee;*/
   text-align: center;
   font: 14px/25px Helvetica, Arial, sans-serif;
   margin: 20px 0;
@@ -108,8 +108,8 @@ label {
 }
  
 label:hover {
-  background: #ddca7e;
-  color: #fff;
+  /*background: #ddca7e;
+  color: #fff;*/
   cursor: pointer;
 }
  
@@ -120,16 +120,16 @@ input#lightswitch {
 }
 
 input#lightswitch:checked + .main {
-  background: #222;
+  /*background: #222;*/
 }
 
 /*Switched Off*/
 input#lightswitch:checked + .main {
-  background-color: #222;
+  /*background-color: #222;*/
 }
  
 input#lightswitch:checked + .main h2 {
-  color: #ddca7e;
+  /*color: #ddca7e;*/
 }
  
 input#lightswitch:checked + .main h2:after {
@@ -137,16 +137,16 @@ input#lightswitch:checked + .main h2:after {
 }
  
 input#lightswitch:checked + .main p {
-  color: #aaa;
-	background-color: #aaa;
+  /*color: #aaa;
+	background-color: #aaa;*/
 }
 
 input#lightswitch:checked + .main .features p{
-  color: #aaa;
-  background-color: #aaa;
+  /*color: #aaa;
+  background-color: #aaa;*/
 }
  
 input#lightswitch:checked + .main > .headerimage {
-  background: url(http://lorempixum.com/900/400/city/4);
-  border: 8px solid #fff;
+  /*background: url(http://lorempixum.com/900/400/city/4);
+  border: 8px solid #fff;*/
 }
