@@ -49,10 +49,9 @@ h2 {
 
 /*feature paragraphs*/
 .features {
-	/*background-color: inherit;*/
+	background-color: inherit;
     width: 940px;
     margin: 0 auto 30px auto;
-	background: black;
 }
 
 .features p {

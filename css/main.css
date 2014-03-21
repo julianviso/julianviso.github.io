@@ -48,7 +48,7 @@ h2 {
 
 /*feature paragraphs*/
 .features {
-	/*background-color: inherit;*/
+	background-color: inherit;
     width: 940px;
     margin: 0 auto 30px auto;
 }
@@ -58,7 +58,6 @@ h2 {
   float: left;
   padding: 0 20px;
   font: 13px/1.5 Helvetica, Arial, sans-serif;
-	background: white;
 }
  
 
