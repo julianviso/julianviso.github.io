@@ -14,20 +14,30 @@
     	border-radius: 0;
 }
 
+/*Spacing*/
+.megaSpacer{
+	height: 75px;
+}
+
+.largeSpacer{
+	height: 50px;
+}
+
+.mediumSpacer{
+	height: 25px;
+}
+
+.smallSpacer{
+	height: 10px;
+}
+
+/*Body*/
+
 body{
     padding-top: 50px;
     font-size: 12pt;
 }
 
-/*
-* Lights Off Test
-*/
-
-/**, *:after, *:before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}*/
 
 /* {
   -webkit-transition: all 0.5s ease;
@@ -53,20 +63,3 @@ h2 {
   /*background: url(http://www.fengshui-doctrine.com/wallpapers/element/metal/metal-element-fengshui-3.jpg); /*change this later*/
 	background: url(../images/metal.jpg);
 }
-
-.lead {
-	margin: inherit;
-}
-
-/*Light Switch*/
-/*label {
-  display: block;
-  height: 25px;
-  width: 100px;
-  background: #eee;
-  text-align: center;
-  font: 14px/25px Helvetica, Arial, sans-serif;
-  margin: 20px 0;
-  position: static;
-} */
- 

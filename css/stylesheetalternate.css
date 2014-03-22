@@ -14,6 +14,24 @@
     border-radius: 0; 
 }
 
+/*Spacing*/
+.megaSpacer{
+	height: 75px;
+}
+
+.largeSpacer{
+	height: 50px;
+}
+
+.mediumSpacer{
+	height: 25px;
+}
+
+.smallSpacer{
+	height: 10px;
+}
+
+/*Body*/
 body{
     padding-top: 50px;
     font-size: 12pt;
