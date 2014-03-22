@@ -16,7 +16,7 @@
 
 body{
     padding-top: 50px;
-    font-size: 10pt;
+    font-size: 12pt;
 }
 
 /*
@@ -67,7 +67,8 @@ h2 {
   height: 400px;
   width: 900px;
   margin: 0 auto;
-  background: url(http://www.fengshui-doctrine.com/wallpapers/element/metal/metal-element-fengshui-3.jpg); /*change this later*/
+  /*background: url(http://www.fengshui-doctrine.com/wallpapers/element/metal/metal-element-fengshui-3.jpg); /*change this later*/
+	background: url(images/metal.jpg)
 }
 
 .lead {
