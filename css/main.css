@@ -45,23 +45,6 @@ h2 {
 }
 
 
-
-/*feature paragraphs*/
-.features {
-	background: white;
-    width: 940px;
-    margin: 0 auto 30px auto;
-}
-
-.features p {
-  width: 33.33%;
-  float: left;
-  padding: 0 20px;
-  font: 13px/1.5 Helvetica, Arial, sans-serif;
-	background: white;
-}
- 
-
 /*Big Photo*/
 .headerimage {
   height: 400px;

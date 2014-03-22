@@ -16,7 +16,7 @@
 
 body{
     padding-top: 50px;
-    font-size: 10pt;
+    font-size: 12pt;
 	background: #313030;
 	color: white;
 }
@@ -37,23 +37,6 @@ h2 {
     margin-bottom: 40px;
 }
 
-
-
-/*feature paragraphs*/
-.features {
-	background: black;
-    width: 940px;
-    margin: 0 auto 30px auto;
-}
-
-.features p {
-  width: 33.33%;
-  float: left;
-  padding: 0 20px;
-  font: 13px/1.5 Helvetica, Arial, sans-serif;
-	background: black;
-}
- 
 
 /*Big Photo*/
 .headerimage {

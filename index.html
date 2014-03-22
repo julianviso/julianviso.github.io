@@ -48,25 +48,23 @@
 	
 	
 
-	<button onClick="swapper('css/main.css')">Default</button>
-	<button onClick="swapper('css/stylesheetalternate.css')">Stylesheet Alternate</button>
+	<!--<button onClick="swapper('css/main.css')">Default</button>
+	<button onClick="swapper('css/stylesheetalternate.css')">Stylesheet Alternate</button>-->
 	
 	<script type="text/javascript">
 		var i=1;
-		function colorTheme(){
+		function styleSheet(){
 			if(i%2==0){
-				document.body.style.backgroundColor="white";
-				document.body.style.color= '#313030';
+				swapper('css/main.css');			
 			}
 			else{
-				document.body.style.backgroundColor="#313030";
-				document.body.style.color= 'white';
+				swapper('css/stylesheetalternate.css');				
 			}
 			i++;
 		}
 	</script>
 	<br>
-	<button onclick="colorTheme()">Click me</button>
+	<button onclick="styleSheet()">Click me</button>
  
     
 
@@ -74,28 +72,8 @@
         <div class="headerimage"></div>
 	<br>
         <p class="lead">I'm a student at the <a href="http://uky.edu">University of Kentucky</a> studying Computer Science. My interests involve video game development, web design, automation, and network security.</p>
-        <div class="features">
-            <p>Contact</p>
-            <p>Twitter</p>
-        </div>
     <!-- end .features --> 
- 
-    
-        
-  <!-- end .main --> 
-    
-    
 
-    
-    
-    
-    
-    
-    
-  <div class="page-margin">
-    <!--<p class="lead">I'm a student at the <a href="http://uky.edu">University of Kentucky</a> studying Computer Science. My interests involve video game development, web design, automation, and network security.</p> -->
-    
- </div>   
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
