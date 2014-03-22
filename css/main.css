@@ -70,6 +70,10 @@ h2 {
   background: url(http://www.fengshui-doctrine.com/wallpapers/element/metal/metal-element-fengshui-3.jpg); /*change this later*/
 }
 
+.lead {
+	margin: inherit;
+}
+
 /*Light Switch*/
 /*label {
   display: block;
