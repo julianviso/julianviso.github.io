@@ -105,10 +105,4 @@ h2 {
 
 
 /*Big Photo*/
-.headerimage {
-  height: 400px;
-  width: 900px;
-  margin: 0 auto;
-  /*background: url(http://www.fengshui-doctrine.com/wallpapers/element/metal/metal-element-fengshui-3.jpg); /*change this later*/
-	background: url(../images/metal.jpg);
-}
+
