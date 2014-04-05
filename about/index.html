@@ -1,43 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Julian Viso">
+    <meta name="MobileOptimized">
     <title>Julian Viso</title>
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/main.css" rel="stylesheet">
+	<link href="../bootstrap-3.1.1-dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../font-awesome-4.0.3/css/font-awesome.min.css" rel="stylesheet">
+    <!--<link href="css/main.css" rel="stylesheet"> -->
+	<link id="swapper" rel="stylesheet" type="text/css" href="../css/main.css" />
+	<!-- end .features --> 
     
-    
-    
-<div class="navbar">
-  <nav class="navbar-inverse">
-    <a class="brand" href="/index.html">Julian Viso</a>
-    <ul class="nav">
-      <li class="active"><a href="#">About</a></li>
-      <li><a href="#">Projects</a></li>
-      <li><a href="#">Blog</a></li>
-    </ul>
-  </nav>
-</div>
-    
-    
-    </head>
-    
-<body>
-    <div id="top-floating-bar">
-    <div class="fixed-bar-buttons">
-        <ul>
-            <li>Julian Viso</li>
-            <li>About Me</li>
-            <a href="/about/">Contact</a>
-            <li>Contact </li>
-        </ul> 
-    </div>
-</div>
-    <div id="container" style='clear:both'>
-    <div id='content-panel'>
-        </div>
-    </div>
+    <script type="text/javascript">
+    		if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+      		var msViewportStyle = document.createElement('style')
+      		msViewportStyle.appendChild(document.createTextNode(
+      		'@-ms-viewport{width:auto!important}'))
+     		document.querySelector('head').appendChild(msViewportStyle)
+    		}
+  	</script>
+</head>
 
+	
+	
+<body>
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle Nav</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span> 
+				 </button>
+				 <a class="navbar-brand" href="/index.html">Julian Viso</a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="/about/">About</a></li>
+					<li><a href="#">Projects</a></li>
+					<li><a href="#">Blog</a></li>
+					<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="https://github.com/julianviso"><i class="fa fa-github fa-lg"></i></a></li>
+							<li><a href="https://twitter.com/VisoJulian"><i class="fa fa-twitter fa-lg"></i></a></li>
+							<li><a href="mailto:julian@julianviso.com"><i class="fa fa-envelope fa-lg"></i></a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>  
+		</div>
+	</div>
+	
 </body>
+	
+	
+	
 <footer></footer>
 </html>
 
