@@ -1,20 +1,21 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html class="no-js" lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Julian Viso">
-    <meta name="MobileOptimized">
-    <title>Julian Viso</title>
-	<link href="../bootstrap-3.1.1-dist/css/bootstrap.min.css" rel="stylesheet">
-	<link href="../font-awesome-4.0.3/css/font-awesome.min.css" rel="stylesheet">
-    <!--<link href="css/main.css" rel="stylesheet"> -->
-	<link id="swapper" rel="stylesheet" type="text/css" href="../css/main.css" />
-	<!-- end .features --> 
-    
-    <script type="text/javascript">
-    		if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+  	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="MobileOptimized">
+	<title>Julian Viso</title>
+  	<meta name="author" content="Julian Viso">
+
+  	<link href='http://fonts.googleapis.com/css?family=Lobster+Two:700&v2' rel='stylesheet' type='text/css'>
+  	<link rel="stylesheet" href="../Parallax-Scrolling-master/css/style.css">
+   	<link rel="stylesheet" href="../Parallax-Scrolling-master/css/reset.css">
+	<link rel="stylesheet" href="../bootstrap-3.1.1-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../font-awesome-4.0.3/css/font-awesome.min.css">
+	
+	<script type="text/javascript">
+		if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
       		var msViewportStyle = document.createElement('style')
       		msViewportStyle.appendChild(document.createTextNode(
       		'@-ms-viewport{width:auto!important}'))
@@ -23,10 +24,9 @@
   	</script>
 </head>
 
-	
-	
 <body>
-	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	
+		<div class="navbar navbar-default navbar-fixed-top" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -54,11 +54,77 @@
 			</div>  
 		</div>
 	</div>
+
+  <div id="main" role="main">
+
+	<!-- page #1 -->
+	<section id="first" class="story" data-speed="8" data-type="background">    	
+		<div class="mainlogo" data-type="sprite" data-offsetY="100" data-Xposition="50%" data-speed="-2"></div>		
+		<article>
+
+			<img src="../images/metal.jpg" alt="temp-photo" width="711" height="242" />
+			<p>Twitter: <a href="https://twitter.com/VisoJulian"><i class="fa fa-twitter fa-lg"></i></a> / Email: <a href="mailto:julian@julianviso.com"><i class="fa fa-envelope fa-lg"></i></a></p>
+	    </article>
+	</section>
+
+	<!-- Section #2 / Background Only -->
+	<section id="second" class="story" data-speed="4" data-type="background">
+		<article>
+			<h2>A little about me</h2>
+		    	<p>I'm a computer science student at the <a href="http://www.uky.edu">University of Kentucky.</a></p>
+		    	<p>I'm a major basketball fanatic!</p>
+		    	<p>I enjoy playing video games. Currently I'm into RPG style games mostly but enjoy all kinds and plan on learning to code my own games soon!</p>
+		    	<p>I'm fluent in Spanish and English.</p>	
+		    	<p>I love all kinds of music! I used to be a musician before I started college and know how to play both the saxophone and drums.</p>		
+		</article>
+	</section>
 	
+	<!-- Section #3  -->
+	<section id="third" class="story" data-speed="6" data-type="background" data-offsetY="250">    	
+		<div class="photograph" data-type="sprite" data-offsetY="1250" data-Xposition="25%" data-speed="2"></div>
+    	<article>
+    		<h2>Computer skills</h2>
+	    	<div class="textbox">    	
+		    	<p>Web Programming: (CSS/javascript/HTML/jquery)</p>
+		    	<p>C++</p>
+		    	<p>Python</p>
+			<p>Powershell</p>
+			<p>Will be toying with Java this upcoming summer on a special project I've made for myself!</p>
+		    </div>
+    	</article>
+	</section>	
+	
+
+	<!-- Section #4  -->
+	<section id="fourth" class="story" data-speed="8" data-type="background" data-offsetY="250">
+    	<article>
+    		<h2>Meta</h2>
+	    	<div class="textbox">    	
+		    	<p>This site is powered by the following open source technologies:</p>
+		    	<p><a href="www.getbootstrap.com">Bootstrap</a></p>
+		    	<p><a href="www.fontawesome.io">Font Awesome</a></p>
+			<p>Github's <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-pages">free domain hosting!</a></p>
+		    </div>
+    	</article>
+	</section>	
+
+	<!-- Section #5 / The End-->
+	<section id="theend" class="story" data-speed="8" data-type="background" data-offsetY="250">    	
+		<div class="byebye" data-type="sprite" data-offsetY="-1600" data-Xposition="50%" data-speed="-2"></div>	
+	</section>
+	
+  </div> <!-- // End of #main -->
+
+
+
+  <script src='js/libs/jquery-1.6.1.min.js'></script>
+  <script src="js/script.js"></script>
+  <!--[if lt IE 7 ]>
+    <script src="js/libs/dd_belatedpng.js"></script>
+    <script>DD_belatedPNG.fix("img, .png_bg");
+  <![endif]-->
+
 </body>
-	
-	
 	
 <footer></footer>
 </html>
-
