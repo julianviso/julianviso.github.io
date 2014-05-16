@@ -32,10 +32,21 @@
 }
 
 /*Body*/
+body 
+{
+background-image:url("w3css.gif");
+background-repeat:no-repeat;
+background-attachment:fixed;
+}
+
+
 body{
     padding-top: 50px;
     font-size: 12pt;
-	background: #313030;
+	/*background: #313030; */
+	background-image: url("../images/puckered.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	color: white;
 }
 
