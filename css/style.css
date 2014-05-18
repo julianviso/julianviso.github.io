@@ -22,7 +22,7 @@ article h2 { font-family: 'Lobster Two'; font-size: 60px; margin: 25px 0; line-h
 #theend { background: url(../images/puckered.png) 50% bottom no-repeat fixed; }
 
 /* Introduction */
-#first .mainlogo { background: url(../images/JulianViso_green.png) 50% 100px no-repeat fixed; min-height: 1000px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; }
+#first .mainlogo { background: url(../images/JulianViso_orange.png) 50% 100px no-repeat fixed; min-height: 1000px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; }
 #first article { width: 100%; top: 300px; position: absolute; text-align: center; }
 #first article p,
 #first article a { color: #ccc; }

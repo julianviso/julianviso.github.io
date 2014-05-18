@@ -61,14 +61,33 @@
 	<!--<button onClick="swapper('css/main.css')">Default</button>
 	<button onClick="swapper('css/stylesheetalternate.css')">Stylesheet Alternate</button>-->
 	<div class="container">
+	
+	<script type="text/javascript">
+		function readCookie(name) {
+    		var nameEQ = name + "=";
+    		var ca = document.cookie.split(';');
+    		for (var i = 0; i < ca.length; i++) {
+        		var c = ca[i];
+			while (c.charAt(0)==' ') c = c.substring(1,c.length);
+			if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    		}
+    		return null;
+	}
+	</script>
+		
+	
 	<script type="text/javascript">
 		var i=1;
 		function styleSheet(){
 			if(i%2==0){
-				swapper('css/main.css');			
+				swapper('css/main.css');	
+				document.cookie = "username=Visitor";
+				readCookie(Visitor);
 			}
 			else{
-				swapper('css/stylesheetalternate.css');				
+				swapper('css/stylesheetalternate.css');	
+				document.cookie = "username=alternateVisitor";
+				readCookie(alternateVisitor);
 			}
 			i++;
 		}
