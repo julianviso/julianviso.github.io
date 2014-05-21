@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Julian Viso">
-    <meta name="MobileOptimized">
-    <title>Julian Viso</title>
-    <link href="bootstrap-3.1.1-dist/css/bootstrap.min.css" rel="stylesheet">
+    	<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<meta name="author" content="Julian Viso">
+    	<meta name="MobileOptimized">
+    	<title>Julian Viso</title>
+    	<link href="bootstrap-3.1.1-dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="font-awesome-4.0.3/css/font-awesome.min.css" rel="stylesheet">
-    <!--<link href="css/main.css" rel="stylesheet"> -->
+    	<!--<link href="css/main.css" rel="stylesheet"> -->
 	<link id="swapper" rel="stylesheet" type="text/css" href="css/main.css" />
 	<!-- end .features --> 
     
@@ -21,6 +21,35 @@
      		document.querySelector('head').appendChild(msViewportStyle)
     		}
   	</script>
+	<!--<script src="javascript/cookie.js/cookie.min.js"></script> -->
+	<script type="text/javascript">
+		var i=1;
+		function styleSheet(){
+			if(i%2==0){
+				swapper('css/main.css');	
+				storeStyleSheet("primary","main.css");
+			}
+			else{
+				swapper('css/stylesheetalternate.css');
+				storeStyleSheet("alternate","stylesheetalternate.css");
+			}
+			i++;
+		}
+	</script>
+	
+	<script type="text/javascript">
+		function storeStyleSheet(styleSheetKey, styleSheetName){
+			localStorage.setItem(styleSheetKey, styleSheetName);
+		}
+	</script>
+	
+	<script src="javascript/code.jquery.com:jquery-2.1.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			setStoredStyleSheet(styleSheetKey);
+		});
+	</script>
+		
 </head>
     
 <body>
@@ -61,37 +90,7 @@
 	<!--<button onClick="swapper('css/main.css')">Default</button>
 	<button onClick="swapper('css/stylesheetalternate.css')">Stylesheet Alternate</button>-->
 	<div class="container">
-	
-	<script type="text/javascript">
-		function readCookie(name) {
-    		var nameEQ = name + "=";
-    		var ca = document.cookie.split(';');
-    		for (var i = 0; i < ca.length; i++) {
-        		var c = ca[i];
-			while (c.charAt(0)==' ') c = c.substring(1,c.length);
-			if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
-    		}
-    		return null;
-	}
-	</script>
-		
-	
-	<script type="text/javascript">
-		var i=1;
-		function styleSheet(){
-			if(i%2==0){
-				swapper('css/main.css');	
-				document.cookie = "username=Visitor";
-				readCookie(Visitor);
-			}
-			else{
-				swapper('css/stylesheetalternate.css');	
-				document.cookie = "username=alternateVisitor";
-				readCookie(alternateVisitor);
-			}
-			i++;
-		}
-	</script>
+
 	<br>
 	<button onclick="styleSheet()">Click me</button>
  
@@ -103,7 +102,17 @@
 	<p class="lead">I'm a student at the <a href="http://uky.edu">University of Kentucky</a> studying Computer Science. My interests involve video game development, web design, automation, and network security.</p>
 	<div class="megaSpacer"></div>
 
-
+	<script type="text/javascript">
+		function setStoredStyleSheet(styleSheetKey){
+			var styleSheet = localStorage.getItem(styleSheetKey);
+			if(!(styleSheet=='undefined' || styleSheet==undefined){
+			   	swapper('css/main.css');
+			}
+			else{
+				swapper('css/stylesheetalternate.css');
+			}
+		}
+	</script>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
