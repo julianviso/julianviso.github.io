@@ -7,10 +7,10 @@
     	<meta name="author" content="Julian Viso">
     	<meta name="MobileOptimized">
     	<title>Julian Viso</title>
-	<link href="bootstrap-3.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
-	<link href="font-awesome-4.0.3/css/font-awesome.min.css" rel="stylesheet">
+	<link href="../bootstrap-3.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../font-awesome-4.0.3/css/font-awesome.min.css" rel="stylesheet">
     	<!--<link href="css/main.css" rel="stylesheet"> -->
-	<link id="swapper" rel="stylesheet" type="text/css" href="css/main.css" />
+	<link id="swapper" rel="stylesheet" type="text/css" href="../css/main.css" />
 	<!-- end .features --> 
     
     <script type="text/javascript">
@@ -26,11 +26,11 @@
 		var i=1;
 		function styleSheet(){
 			if(i%2==0){
-				swapper('css/main.css');	
+				swapper('../css/main.css');	
 				storeStyleSheet("primary","main.css");
 			}
 			else{
-				swapper('css/stylesheetalternate.css');
+				swapper('../css/stylesheetalternate.css');
 				storeStyleSheet("alternate","stylesheetalternate.css");
 			}
 			i++;
@@ -114,7 +114,7 @@
 	</script>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+	<script src="../bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
 	<script>
 		function swapper(select_sheet){
 			document.getElementById('swapper').setAttribute('href', select_sheet);
