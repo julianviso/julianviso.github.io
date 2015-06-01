@@ -57,3 +57,18 @@ SpringBoot Compiling with Maven on Windows
 6.) mvn spring-boot:run from the root project directory in the cmd will start the application.
 
 7.) Open a web browser to localhost:8080 and enjoy
+
+8.) To create an executable jar add the following lines below the dependencies section of our pom.xml file.
+
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+        </plugin>
+    </plugins>
+</build>
+
+9.) mvn package to make a new jar
+
+10.) java -jar path/to/jar.jar
