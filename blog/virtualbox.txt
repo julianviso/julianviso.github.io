@@ -1,7 +1,0 @@
-Ubuntu 14.04.2 VirtualBox Resolution
-
-1. Go to http://download.virtualbox.org/virtualbox/
-2. Find the exact version you have of virtualbox
-3. Download VBoxGuestAdditions_version.iso and plug it into your VM (will probably be located somewhere like C:\Program Files\Oracle\VirtualBox )
-4. From Devices, in virtualbox, click on insert guest additions, and insert the new iso.
-5. Run the iso, then restart VM and you should be good to go
