@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  
+    <title type="text" xml:lang="en">Julian Viso</title>
+    <link type="application/atom+xml" rel="self" href="http://julianviso.com//atom.xml"/>
+  
+  <link href="http://julianviso.com//"/>
+  <id>http://julianviso.com//</id>
+  <updated>2016-03-28T15:48:51Z</updated>
+  <author>
+    <name>Julian Viso</name>
+    <email>julian.viso@outlook.com</email>
+  </author>
+  <rights type="text">Copyright © 2016 Julian Viso. All rights reserved.</rights>
+  
+  <entry>
+  <title type="text">Spring cleaning</title>
+  <link rel="alternate" type="text/html" href="http://julianviso.com//spring-cleaning.html" />
+  <id>http://julianviso.com//spring-cleaning</id>
+  <published>2016-03-25T00:00:00Z</published>
+  <updated>2016-03-25T00:00:00Z</updated>
+  <content type="html"><![CDATA[ <p>In the past four months, everything in my life has changed drastically. I graduated college, started working as a software engineer, and for the first time in several years have found myself with plenty of free time. For over half a year I&rsquo;ve had the intention of remodeling my site, but found an excuse to put it off. Given the recent changes in my life, I figured now is the perfect time to do some spring cleaning and bring back life to this site. Today you&rsquo;re seeing that in this new layout.
+<br><br>
+You may remember my old site. It was my first time creating any website. My lack of creativity however, and limited knowledge led to a rather empty looking website however:</p>
+
+<p><img src="../static/img/oldWebsite.png" alt="oldWebsite" /></p>
+
+<blockquote><p>I did however experiment a lot with it, although from a viewing standpoint it was an extremely boring site&hellip;</p></blockquote>
+
+<p>So what&rsquo;s new?</p>
+
+<p>-For the first time I&rsquo;ll be using Jekyll on this site.</p>
+
+<p>-The blog page will include blogs for the first time!</p>
+
+<p>-There will no longer be an About page. Instead I will be including my resume.</p>
+ ]]></content>
+</entry>
+
+
+
+</feed>
