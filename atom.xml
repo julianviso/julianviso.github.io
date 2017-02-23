@@ -6,7 +6,7 @@
   
   <link href="http://julianviso.com//"/>
   <id>http://julianviso.com//</id>
-  <updated>2017-02-23T17:22:40Z</updated>
+  <updated>2017-02-23T17:25:53Z</updated>
   <author>
     <name>Julian Viso</name>
     <email>julian.viso@outlook.com</email>
@@ -42,15 +42,13 @@
 
 <p>It was created to where any content I manually create (such as this blog post) gets written in jvsite, and then all the content gets generated in julianviso.github.io which is then displayed. To do this, the following command is run.</p>
 
-<p>&lsquo;&rsquo;&lsquo;
-jekyll serve
-&rsquo;&lsquo;&rsquo;</p>
+<pre><code>jekyll serve
+</code></pre>
 
 <p>This command will generate everything inside of _site. Everything that gets generated in here then needs to be pushed to julianviso.github.io in order for the changes to show up. To do this we can either manually move everything over (bad idea) or we can let jekyll do everything for us with the following command.</p>
 
-<p>&lsquo;&rsquo;&lsquo;
-jekyll build &ndash;destination &ldquo;path to julianviso.github.io&rdquo;
-&rsquo;&lsquo;&rsquo;</p>
+<pre><code>jekyll build --destination "path to julianviso.github.io"
+</code></pre>
  ]]></content>
 </entry>
 
