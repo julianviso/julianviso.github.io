@@ -6,13 +6,49 @@
   
   <link href="http://julianviso.com//"/>
   <id>http://julianviso.com//</id>
-  <updated>2016-03-29T16:33:06Z</updated>
+  <updated>2017-02-23T17:14:20Z</updated>
   <author>
     <name>Julian Viso</name>
     <email>julian.viso@outlook.com</email>
   </author>
-  <rights type="text">Copyright © 2016 Julian Viso. All rights reserved.</rights>
+  <rights type="text">Copyright © 2017 Julian Viso. All rights reserved.</rights>
   
+  <entry>
+  <title type="text">Updating this website</title>
+  <link rel="alternate" type="text/html" href="http://julianviso.com//updating-this-website.html" />
+  <id>http://julianviso.com//updating-this-website</id>
+  <published>2017-02-23T00:00:00Z</published>
+  <updated>2017-02-23T00:00:00Z</updated>
+  <content type="html"><![CDATA[ <p>A couple days ago I received my yearly notification to renew my domain. Each year when this happens, I tend to update this website. It has been about a year since this website was last updated. Yes I realize that I claimed last year I would try using the blog that I&rsquo;ve created. A lot has happened in the past year such as the following.</p>
+
+<ul>
+<li>I started my professional career.</li>
+<li>I became really comfortable with Android.</li>
+<li>I did my first ever solo travel. I went to San Francisco to visit one of my college roommates.</li>
+<li>I purchased my first bike, and picked it up as a new hobby (which I might add was highlighted when I went biking across the Golden Gate in my trip to SF).</li>
+<li>I picked up playing volleyball.</li>
+</ul>
+
+
+<p>There were many other things that happened throughout the year, however at the time of this writing, it was what first came to my mind. When I tried to finally update this website however, I realized that I had completely forgotten how to generate this site using jekyll. After some struggles figuring re-learning jekyll and how to generate everything in my site again, I decided now would be a great time for a blog post to document how to do this for the future if I ever forget again.</p>
+
+<p>My website has two repositories on github.</p>
+
+<ul>
+<li>julianviso.github.io</li>
+<li>jvsite</li>
+</ul>
+
+
+<p>It was created to where any content I manually create (such as this blog post) gets written in jvsite, and then all the content gets generated in julianviso.github.io which is then displayed. To do this, the following commands are run.</p>
+
+<p>&lsquo;jekyll serve&rsquo;</p>
+
+<p>This command will generate everything inside of &lsquo;_site.&rsquo; Everything that gets generated in here then needs to be pushed to julianviso.github.io in order for the changes to show up. To do this we can either manually move everything over (bad idea) or we can do something more clever.</p>
+ ]]></content>
+</entry>
+
+
   <entry>
   <title type="text">Spring cleaning</title>
   <link rel="alternate" type="text/html" href="http://julianviso.com//spring-cleaning.html" />

@@ -9,7 +9,7 @@
     <link rel="favicon" href="static/img/favicon.ico">
 
     
-      <title>Blog</title>
+      <title>Updating this website</title>
     
 	
     <!-- Bootstrap -->
@@ -64,39 +64,75 @@
 
 
     <div class="container">
-<h3>Archive</h3>
-  <div class="panel panel-default">
-    <div class="panel-body">
-		
-			<div class="row">
-				 <div class="col-sm-4 col-md-4 col-lg-4">
-					 <h5 style="text-align: right">
-					 	February 23, 2017
-					 </h5>
-				 </div>
-				 <div class="col-sm-8 col-md-8 col-lg-8">
-					 <h5 style="text-align: left">
-					 	<strong><a href="/updating-this-website.html">Updating this website</a></strong>
-					 </h5>
-				 </div>
-			</div>
-	    
-			<div class="row">
-				 <div class="col-sm-4 col-md-4 col-lg-4">
-					 <h5 style="text-align: right">
-					 	March 25, 2016
-					 </h5>
-				 </div>
-				 <div class="col-sm-8 col-md-8 col-lg-8">
-					 <h5 style="text-align: left">
-					 	<strong><a href="/spring-cleaning.html">Spring cleaning</a></strong>
-					 </h5>
-				 </div>
-			</div>
-	    
+	<div class="blog-post">
+		<h3>
+		  <strong><a href="/updating-this-website.html">Updating this website</a></strong>
+		</h3>
 	</div>
-  </div>
+	<div class="blog-title">
+		<h4>
+		February 23, 2017
+			&nbsp;&nbsp;
+			
+			 <span class="label label-success">blog</span>
+			
+		</h4>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-body">
+			<div class="blogpost">
+			  <p>A couple days ago I received my yearly notification to renew my domain. Each year when this happens, I tend to update this website. It has been about a year since this website was last updated. Yes I realize that I claimed last year I would try using the blog that I&rsquo;ve created. A lot has happened in the past year such as the following.</p>
+
+<ul>
+<li>I started my professional career.</li>
+<li>I became really comfortable with Android.</li>
+<li>I did my first ever solo travel. I went to San Francisco to visit one of my college roommates.</li>
+<li>I purchased my first bike, and picked it up as a new hobby (which I might add was highlighted when I went biking across the Golden Gate in my trip to SF).</li>
+<li>I picked up playing volleyball.</li>
+</ul>
+
+
+<p>There were many other things that happened throughout the year, however at the time of this writing, it was what first came to my mind. When I tried to finally update this website however, I realized that I had completely forgotten how to generate this site using jekyll. After some struggles figuring re-learning jekyll and how to generate everything in my site again, I decided now would be a great time for a blog post to document how to do this for the future if I ever forget again.</p>
+
+<p>My website has two repositories on github.</p>
+
+<ul>
+<li>julianviso.github.io</li>
+<li>jvsite</li>
+</ul>
+
+
+<p>It was created to where any content I manually create (such as this blog post) gets written in jvsite, and then all the content gets generated in julianviso.github.io which is then displayed. To do this, the following commands are run.</p>
+
+<p>&lsquo;jekyll serve&rsquo;</p>
+
+<p>This command will generate everything inside of &lsquo;_site.&rsquo; Everything that gets generated in here then needs to be pushed to julianviso.github.io in order for the changes to show up. To do this we can either manually move everything over (bad idea) or we can do something more clever.</p>
+
+			   <hr>
+			   <div class="related-posts">
+				   <h5>Related Posts</h5>
+				   
+						<div class="row">
+							 <div class="col-sm-4 col-md-4 col-lg-4">
+								 <h6 style="text-align: right">
+								 	March 25, 2016
+								 </h6>
+							 </div>
+							 <div class="col-sm-8 col-md-8 col-lg-8">
+								 <h6 style="text-align: left">
+								 	<strong><a href="/spring-cleaning.html">Spring cleaning</a></strong>
+								 </h6>
+							 </div>
+						</div>
+					
+			   </div>
+			</div>
+		</div>
+	</div>
+	
+
 </div>
+
 
   </div>
   <!-- Footer -->
