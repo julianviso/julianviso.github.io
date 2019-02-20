@@ -9,7 +9,7 @@
     <link rel="favicon" href="static/img/favicon.ico">
 
     
-      <title>Spring cleaning</title>
+      <title>Three Things I Love About Kotlin</title>
     
 	
     <!-- Bootstrap -->
@@ -66,12 +66,12 @@
     <div class="container">
 	<div class="blog-post">
 		<h3>
-		  <strong><a href="/spring-cleaning.html">Spring cleaning</a></strong>
+		  <strong><a href="/three-things-i-love-about-kotlin.html">Three Things I Love About Kotlin</a></strong>
 		</h3>
 	</div>
 	<div class="blog-title">
 		<h4>
-		March 25, 2016
+		February 19, 2019
 			&nbsp;&nbsp;
 			
 			 <span class="label label-success">blog</span>
@@ -81,39 +81,100 @@
 	<div class="panel panel-default">
 		<div class="panel-body">
 			<div class="blogpost">
-			  <p>In the past four months, everything in my life has changed drastically. I graduated college, started working as a software engineer, and for the first time in several years have found myself with plenty of free time. For over half a year I&rsquo;ve had the intention of remodeling my site, but found an excuse to put it off. Given the recent changes in my life, I figured now is the perfect time to do some spring cleaning and bring back life to this site. Today you&rsquo;re seeing that in this new layout that was inspired by <a href="https://github.com/biomadeira/sustain">Sustain</a>.
-<br><br>
-You may remember my old site. It was my first time creating any website. My lack of creativity however, and limited knowledge led to a rather empty looking website however:</p>
+			  <p>Let&rsquo;s get one thing straight right away. Kotlin is a really nice language to write code in!</p>
 
-<p><img src="../static/img/oldWebsite.png" alt="oldWebsite" /></p>
+<p>It&rsquo;s mid-summer of 2018. At work I had just been swapped to a new team (actually a team I was a part of back in 2016). Up until now in my short career I had focused mostly on front-end development. For some time however, I had wanted to start working more on backend development to improve as a software engineer. Coincidentally (not really, I had already heard of it before moving to this team) the team I am to this day a part of was planning to update their entire backend API from a dated Grails app to something modern and there was going to be lots of opportunities to get my feet wet with backend development!</p>
 
-<blockquote><p>I did however experiment a lot with it, although from a viewing standpoint it was an extremely boring site&hellip;</p></blockquote>
+<p>Groovy at this point is becoming a dying a langauge, and our team was looking for what language to re-write our entire backend in that supports Spring 3.0. Java? Groovy? Kotlin?!? As a team we decided that Groovy was not worth using, and let&rsquo;s be real, Java is too wordy. Enter Kotlin&hellip;</p>
 
-<p>So what&rsquo;s new?</p>
+<p>Around Fall of 2018 I finally started to get my feet wet with Kotlin. After a couple of months of coding in Kotlin I am by no means an expert in the language, but I have quickly grown to love it! Kotlin was created by JetBrains, and runs on the JVM. This means that Kotlin can be easily integrated with Java code out there and will compile just fine! Let&rsquo;s discuss some basics about Kotlin that differentiate it as well as some features that I personally love.</p>
 
-<p>-For the first time I&rsquo;ll be using Jekyll on this site.</p>
+<h3>Strong Null Checks</h3>
 
-<p>-The blog page will include blogs for the first time!</p>
+<p>The first thing you&rsquo;ll notice about Kotlin is that there are strong null checks. A variable cannot be null by default unless specified with the ? operator. Kotlin forces you to watch out for null pointer exceptions. Say goodbye to all those try/catch blocks!</p>
 
-<p>-There will no longer be an About page. Instead I will be including my resume.</p>
+<pre><code>var example: MyClass = MyClass() 
+example = null // Will fail to compile
+
+var workingExample: MyClass? = MyClass()
+var workingExample = null //will compile
+</code></pre>
+
+<p>Variables can be set using var or val, with var being modifiable while val isn&rsquo;t. Ok, this really isn&rsquo;t something that I love or hate but I just wanted to point out real quick.</p>
+
+<pre><code>    val a: String = "julian" // val is immutable
+    var b: Int = 8 // var is modifiable
+</code></pre>
+
+<h3>When</h3>
+
+<p>Ok, back to actual things I love about Kotlin, there&rsquo;s when. We&rsquo;ve all used switch statements before. Kotlin has their own version of Switch which is way more readable and I now try to incorporate it perhaps too much these days. There are tons of ways you can use when but here are two examples showing it.</p>
+
+<pre><code>val user: Boolean = when {
+    user == null -&gt; false
+    user is "julian" -&gt; true
+    else -&gt; user = "lost"
+}
+
+when (x) {
+    in 1..10 -&gt; print("x in range")
+    in validRange -&gt; print("x is valid")
+    else -&gt; print("x invalid")
+}
+</code></pre>
+
+<h3>Data Classes</h3>
+
+<p>In Kotlin, we can avoid writing a lot of boilerplate code. A data class encapsulates all the functionality of your typical objects which do nothing but store data. Better shown, let&rsquo;s first look at a Java movie class below.</p>
+
+<pre><code>public class Movie {
+    private String name;
+    private String director;
+
+    public Movie(String name, String director) {
+        this.name = name;
+        this.director = director;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDirector() {
+        return director;
+    }
+
+    public void setDirector(String director) {
+        this.director = director;
+    }
+
+    // Purposely leaving these empty, yes deal with it
+    @Override
+    public String toString(){}
+
+    @Override
+    public Boolean equals(Object o){}
+
+    @Override
+    public Int hashCode() {}
+}
+</code></pre>
+
+<p>Just writing that was enough to make me lazy halfway through creating a simple class that stores 2 fields of data for a movie. Luckily, in Kotlin we can do this all in a single line!</p>
+
+<pre><code>data class Movie(val name: String, val director: String)    
+</code></pre>
+
+<p>That&rsquo;s literally it! With this Kotlin will generate the rest for us. We also get a copy() for free alongside toString(), equals(), and hashCode().</p>
 
 			   <hr>
 			   <div class="related-posts">
 				   <h5>Related Posts</h5>
 				   
-						<div class="row">
-							 <div class="col-sm-4 col-md-4 col-lg-4">
-								 <h6 style="text-align: right">
-								 	February 19, 2019
-								 </h6>
-							 </div>
-							 <div class="col-sm-8 col-md-8 col-lg-8">
-								 <h6 style="text-align: left">
-								 	<strong><a href="/three-things-i-love-about-kotlin.html">Three Things I Love About Kotlin</a></strong>
-								 </h6>
-							 </div>
-						</div>
-					
 						<div class="row">
 							 <div class="col-sm-4 col-md-4 col-lg-4">
 								 <h6 style="text-align: right">
@@ -136,6 +197,19 @@ You may remember my old site. It was my first time creating any website. My lack
 							 <div class="col-sm-8 col-md-8 col-lg-8">
 								 <h6 style="text-align: left">
 								 	<strong><a href="/updating-this-website.html">Updating this website</a></strong>
+								 </h6>
+							 </div>
+						</div>
+					
+						<div class="row">
+							 <div class="col-sm-4 col-md-4 col-lg-4">
+								 <h6 style="text-align: right">
+								 	March 25, 2016
+								 </h6>
+							 </div>
+							 <div class="col-sm-8 col-md-8 col-lg-8">
+								 <h6 style="text-align: left">
+								 	<strong><a href="/spring-cleaning.html">Spring cleaning</a></strong>
 								 </h6>
 							 </div>
 						</div>
